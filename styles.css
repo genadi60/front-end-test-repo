@@ -3,3 +3,7 @@ body {
     margin: 0;
     background: #FF0;
 }
+
+p {
+    padding-bottom: 1rem;
+}
