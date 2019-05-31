@@ -1,9 +1,15 @@
 body {
     padding: 2rem;
     margin: 0;
-    background: #F00;
+    background: #FF0;
 }
 
 p {
     padding-bottom: 1rem;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1em;
 }
