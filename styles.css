@@ -1,7 +1,84 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 body {
     padding: 2rem;
-    margin: 0;
     background: #FF0;
+}
+
+.site {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.brand {
+    display: block;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}
+
+.site-header nav {
+    flex: 1 0 100%;
+}
+
+.navigation nav > ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navigation nav > ul li {
+    list-style: none;
+}
+
+.navigation nav > ul li {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navigation nav > ul li:first-child {
+    border-left: 0 solid rgba(0, 0, 0, 0.1);
+}
+
+.navigation nav > ul li:last-child{
+    border-right: 0 solid rgba(0, 0, 0, 0.1);
+}
+
+
+.navigation nav > ul li a {
+    display: block;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    color: #000;
+}
+
+.site-header nav li:hover > a,
+.site-header nav a:focus,
+.site-header nav a:hover{
+    background: rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.site-header nav a:focus:active,
+.site-header nav a:hover:active {
+    background: #000;
+    color: #FFF;
 }
 
 p {
