@@ -1,0 +1,61 @@
+body {
+    padding: 2rem;
+    margin: 0;
+    font-size: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(64, 1fr);
+    justify-content: center;
+    grid-auto-flow: dense;
+
+    grid-gap: 1rem;
+}
+
+.item {
+    position: relative;
+    background: #CCC;
+    overflow: hidden;
+}
+
+.item img {
+    display: block;
+}
+
+.landscape {
+    grid-column-start: span 16;
+}
+
+.portrait {
+    grid-column-start: span 15;
+}
+
+.landscape  img{
+    width: 100%;
+    height: auto;
+}
+
+.portrait img{
+    width: 100%;
+    height: auto;
+}
+
+/*
+.item:before {
+
+    display: block;
+    content: "";
+    background: #000;
+    padding-top: 100%;
+}
+
+.item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
